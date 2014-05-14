@@ -16,7 +16,7 @@
   "dependencies": {
     "angular": "~1.2.16",
     "jquery": "~2.1.1",
-    "nginfinitescroll": "~1.1.0",
+    "nginfinitescroll": "1.1.0",
     "twitter": "~3.1.1"
   }
 }
