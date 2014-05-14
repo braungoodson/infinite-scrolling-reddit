@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bower_components/twitter/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./bower_components/twitter/dist/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+	<section ng-app="app" ng-controller="AppController">
+		<div class="container">
+			<h1>Infinite Scrolling Demo (reddit.com)</h1>
+			<div class="media" infinite-scroll="reddit.nextPage()" infinite-scroll-disabled="reddit.busy" infinite-scroll-distance="1">
+				<div class="reddit-post" ng-repeat="item in reddit.items">
+					<span class="pull-left" href="#">{{item.score}}</span>
+					<span class="pull-left" href="#">
+						<img class="media-object reddit-thumbnail" src="{{item.thumbnail}}" />
+					</span>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="{{item.url}}">{{item.title}}</a></h4>
+						by {{item.author}} - {{item.num_comments}} comments
+					</div>
+				</div>
+				<div ng-show="reddit.busy">loading data...</div>
+			</div>
+		</div>
+	</section>
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/twitter/dist/js/bootstrap.min.js"></script>
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/nginfinitescroll/build/ng-infinite-scroll.min.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>

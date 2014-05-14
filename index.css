@@ -1,0 +1,16 @@
+.reddit-post {
+	margin-bottom: 16px;
+	min-height: 64px;
+}
+
+.reddit-post > span {
+	margin-right: 10px;
+	min-width: 32px;
+	font-weight: bold;
+	color: grey;
+}
+
+.reddit-thumbnail {
+	min-width:64px;
+	max-width:64px;
+}

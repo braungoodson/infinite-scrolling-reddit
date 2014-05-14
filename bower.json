@@ -1,0 +1,22 @@
+{
+  "name": "infinite-scrolling",
+  "version": "0.0.0",
+  "authors": [
+    "Braun Goodson <bgoodson@oattravel.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "jquery": "~2.1.1",
+    "nginfinitescroll": "~1.1.0",
+    "twitter": "~3.1.1"
+  }
+}
