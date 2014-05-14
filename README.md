@@ -1,4 +1,4 @@
-infinite-scrolling
+infinite-scrolling-reddit
 =====
 
 	$ npm install
