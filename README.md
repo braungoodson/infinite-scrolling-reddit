@@ -1,1 +1,6 @@
-infinite-scrolling\n=====
+infinite-scrolling
+=====
+
+	$ npm instal
+	 ...
+	$ npm start
