@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./index.css" />
 </head>
 <body>
+	<div class="container"
 	<section ng-app="app" ng-controller="AppController">
 		<div class="container">
 			<h1>Infinite Scrolling Demo (reddit.com)</h1>
@@ -21,7 +22,18 @@
 						by {{item.author}} - {{item.num_comments}} comments
 					</div>
 				</div>
-				<div ng-show="reddit.busy">loading data...</div>
+				<div ng-show="reddit.busy">
+					<div class="reddit-post">
+						<span class="pull-left" href="#">000</span>
+						<span class="pull-left" href="#">
+							<img class="media-object reddit-thumbnail" src="{{item.thumbnail}}" />
+						</span>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="{{item.url}}">Loading reddits...</a></h4>
+							by develop - 0 comments
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
