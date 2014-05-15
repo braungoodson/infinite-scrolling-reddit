@@ -12,7 +12,8 @@
 		<div class="container">
 			<h1>Infinite Scrolling Demo (reddit.com)</h1>
 			<div class="media" infinite-scroll="reddit.nextPage()" infinite-scroll-disabled="reddit.busy" infinite-scroll-distance="1">
-				<div class="reddit-post" ng-repeat="item in reddit.items">
+				<input type="text" class="form-control reddit-input-group" placeholder="search" ng-model="search">
+				<div class="reddit-post" ng-repeat="item in reddit.items | filter:search">
 					<span class="pull-left" href="#">{{item.score}}</span>
 					<span class="pull-left" href="#">
 						<img class="media-object reddit-thumbnail" src="{{item.thumbnail}}" />
@@ -34,6 +35,10 @@
 						</div>
 					</div>
 				</div>
+				<center>
+					<span class="glyphicon glyphicon-chevron-down reddit-puller"></span><br />
+					<span class="glyphicon glyphicon-chevron-down reddit-puller-lt"></span><br />
+				</center>
 			</div>
 		</div>
 	</section>

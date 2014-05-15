@@ -14,3 +14,22 @@
 	min-width:64px;
 	max-width:64px;
 }
+
+.reddit-input-group {
+	margin-bottom: 20px;
+}
+
+.reddit-puller,
+.reddit-puller-lt {
+	font-size:40px;
+	opacity:.5;
+	font-weight:100;
+}
+
+.reddit-puller-lt {
+	opacity:.2;
+}
+
+h1 {
+	font-size: 30px;
+}
