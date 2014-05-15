@@ -19,12 +19,10 @@
 	margin-bottom: 20px;
 	padding:2px;
 	font-size:20px;
-	color:magenta;
 }
 
 .reddit-input-group:focus {
   box-shadow: none;
-  border: 1px solid magenta;
 }
 
 .reddit-puller,
@@ -43,12 +41,10 @@ h1 {
 }
 
 a {
-	color: green;
 	font-weight:400;
 }
 
 a:hover {
-	color: orange;
 	font-weight:400;
 	text-decoration:none;
 }
