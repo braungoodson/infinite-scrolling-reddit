@@ -1,6 +1,6 @@
 {
   "name": "infinite-scrolling-reddit",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "ERROR: No README.md file found!",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "license": "BSD",
   "dependencies": {
     "express": "~4.2.0",
-    "bower": "~1.2.8"
+    "bower": "~1.3.8"
   }
 }
